@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CountriesService } from './countries.service';
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+
 import { CountriesComponent } from './countries.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
@@ -14,7 +13,7 @@ export const appRoutes:Routes=[
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
   HttpClientModule, CommonModule, RouterModule.forChild(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent, CountriesComponent ],
+  declarations: [   CountriesComponent ],
   providers: [ CountriesService ],
   export: [ CountriesComponent ]
 })
