@@ -7,9 +7,13 @@ import { HelloComponent } from './hello.component';
 import { CountriesComponent } from './countries.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
+import { Routes, RouterModule } from '@angular/router';
+export const appRoutes:Routes=[
+  { path: '', component: CountriesComponent}
+];
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
-  HttpClientModule ],
+  HttpClientModule, CommonModule, RouterModule.forChild(appRoutes) ],
   declarations: [ AppComponent, HelloComponent, CountriesComponent ],
   providers: [ CountriesService ],
   export:    [ CountriesComponent ]
