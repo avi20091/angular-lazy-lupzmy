@@ -16,6 +16,6 @@ export const appRoutes:Routes=[
   HttpClientModule, CommonModule, RouterModule.forChild(appRoutes) ],
   declarations: [ AppComponent, HelloComponent, CountriesComponent ],
   providers: [ CountriesService ],
-  export:    [ CountriesComponent ]
+  export: [ CountriesComponent ]
 })
-export class MyModule { }
+export class MyModule { };
